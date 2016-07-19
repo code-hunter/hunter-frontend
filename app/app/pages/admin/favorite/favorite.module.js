@@ -12,11 +12,10 @@
   function routeConfig($stateProvider) {
     $stateProvider
         .state('admin.favorite', {
-          url: '/favorite',
-            templateUrl : 'app/pages/admin/favorite/favorite.html',
-          abstract: true,
-          controller: 'FavoritePageCtrl',
+          url: '/favorite', 
           title: 'Favorites',
+          templateUrl : 'app/pages/admin/favorite/favorite.html',
+          controller: 'FavoritePageCtrl',
           sidebarMeta: {
             icon: 'ion-grid',
             order: 300,
