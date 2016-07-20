@@ -8,12 +8,14 @@
         'ui.router',
 
         'Hunter.pages.admin.profile',
-        'Hunter.pages.admin.form',
         'Hunter.pages.admin.favorite'
+        // 'Hunter.pages.admin.form',
     ])
         .config(routeConfig);
     
-    function  routeConfig($stateProvider) {
+    function  routeConfig($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise('/admin/profile');
+
         $stateProvider.state('admin',
             {
                 url: '/admin',

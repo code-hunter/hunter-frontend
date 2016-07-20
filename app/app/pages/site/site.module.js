@@ -8,7 +8,9 @@
     ]) 
         .config(routeConfig);
 
-    function  routeConfig($stateProvider) {
+    function  routeConfig($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise('/');
+
         $stateProvider.state('site',
             {
                 url: '/',

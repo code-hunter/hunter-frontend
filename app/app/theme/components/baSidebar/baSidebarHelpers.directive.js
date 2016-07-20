@@ -61,7 +61,6 @@
       vm.$$expandSubmenu = function() { console.warn('$$expandMenu should be overwritten by baUiSrefTogglingSubmenu') };
       vm.$$collapseSubmenu = function() { console.warn('$$collapseSubmenu should be overwritten by baUiSrefTogglingSubmenu') };
 
-      debugger
       var subItemsStateRefs = baSidebarService.getAllStateRefsRecursive(menuItem);
 
       vm.$expand = function() {

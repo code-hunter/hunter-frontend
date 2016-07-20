@@ -21,7 +21,6 @@
 
         this.getMenuItems = function() {
           var states = defineMenuItemStates();
-          debugger
           var menuItems = states.filter(function(item) {
             return item.level == 1;
           });
@@ -34,7 +33,6 @@
             var children = states.filter(function(child) {
               return child.level == 1 && child.name.indexOf(item.name) === 0;
             });
-            debugger
             item.subMenu = children.length ? children : null;
           });
 
@@ -57,14 +55,12 @@
         };
 
         this.getAllStateRefsRecursive = function(item) {
-          debugger
           var result = [];
           _iterateSubItems(item);
           return result;
 
           function _iterateSubItems(currentItem) {
             currentItem.subMenu && currentItem.subMenu.forEach(function(subItem) {
-              debugger
               subItem.stateRef && result.push(subItem.stateRef);
               _iterateSubItems(subItem);
             });
@@ -72,7 +68,6 @@
         };
 
         function defineMenuItemStates() {
-          debugger
           return $state.get()
               .filter(function(s) {
                 return s.sidebarMeta;

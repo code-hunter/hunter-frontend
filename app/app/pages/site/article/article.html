@@ -1,11 +1,51 @@
+<div>
+    <!--<div class="">-->
+        <!--<a href="" @click="on_approve(doc._id)"><span class="ion-heart "></span></a>-->
+        <!--<a href="" @click="on_bookmark(doc._id)"><span class="ion-star "></span></a>-->
+    <!--</div>-->
+    <div class="article-title">
+        <a href='www.baidu.com' target="_blank">baidu</a>
+    </div>
+    <div class="article-meta">
+        <span><a href="" class="article-author">作者:鲁迅&nbsp;</a></span>
+        <span>2016年7月20日 12:00:00</span>
+    </div>
+    <div class="article-summary">
+        文章简介：该文章..
+    </div>
+</div>
+<hr>
+<!--<div ng-if="">-->
+    <div ng-repeat="doc in docs">
+        <div>
+            <!--<div class="">-->
+            <!--<a href="" @click="on_approve(doc._id)"><span class="ion-heart "></span></a>-->
+            <!--<a href="" @click="on_bookmark(doc._id)"><span class="ion-star "></span></a>-->
+            <!--</div>-->
+            <div class="article-title">
+                <a href={{doc.url}} target="_blank">{{doc.title}}</a>
+            </div>
+            <div class="article-meta">
+                <span><a href="" class="article-author">作者:{{doc.author}}&nbsp;</a></span>
+                <span>{{doc.published_time}}</span>
+            </div>
+            <div class="article-summary">
+                {{doc.summary}}
+            </div>
+        </div>
+        <hr>
+    </div>
+<!--</div>-->
+
+
 <div class="post-preview">
     <a href="post.html">
-        <h2 class="post-title">
+        <h3 class="post-title">
             Man must explore, and this is exploration at its greatest
-        </h2>
-        <h3 class="post-subtitle">
-            Problems look mighty small from 150 miles up
         </h3>
+        <h4 class="post-subtitle">
+            Problems look mighty small from 150 miles up
+        </h4>
     </a>
     <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
 </div>
